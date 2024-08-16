@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMN Karoseri</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/servicePage.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/visMis.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">
+        <img src="logo3.png">
+      </a></div>
+      <div class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="our_service.html">Our Service</a></li>
+        <li><a href="our_product.html">Our Product</a></li>
+        <li><a href="our_machine.html">Our Machine</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">About Us</a>
+          <div class="dropdown-content">
+            <a href="company_profile.html">Company Profile</a>
+            <a href="vision_mission.html">Vision & Mission</a>
+          </div>
+        </li>
+      </div>
+      <div class="right-menu">
+        <div class="navbar-ext">
+          <i data-feather="search"></i>
+          <i data-feather="shopping-cart"></i>
+        </div>
+        <div class="hamburger-menu">
+          <i data-feather="menu"></i>
+        </div>
+        <div class="dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our_service.html">Our Service</a></li>
+          <li><a href="our_product.html">Our Product</a></li>
+          <li><a href="our_machine.html">Our Machine</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li><a href="company_profile.html">Company Profile</a></li>
+          <li><a href="vision_mission.html">Vision & Mission</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner">
+      <img src="img/visionmission.png" alt="" />
+    </section>
+
+    <!-- Vision Mission -->
+    <div class="vm-container">
+      <div class="vm">
+        <div class="vm-header">VISION</div>
+        <div class="vm-body">
+          Menjadi pemimpin global dalam inovasi teknologi untuk menciptakan kehidupan yang lebih baik.
+        </div>
+      </div>
+      <div class="vm">
+        <div class="vm-header">MISION</div>
+        <div class="vm-body">
+          <ul>
+            <li>
+              Menciptakan produk dan layanan berkualitas tinggi yang memenuhi
+              kebutuhan pelanggan.
+            </li>
+            <li>
+              Mendorong inovasi dan kreativitas melalui lingkungan kerja yang
+              inspiratif.
+            </li>
+            <li>
+              Menjadi agen perubahan positif dengan berkontribusi pada
+              keberlanjutan lingkungan dan masyarakat.
+            </li>
+            <li>
+              Memastikan kepuasan pelanggan melalui pelayanan terbaik dan
+              kepedulian terhadap kebutuhan mereka.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="our_service.html">Our Service</a>
+        <a href="our_product.html">Our Product</a>
+        <a href="contact_us.html">Contact</a>
+        <a href="company_profile.html">About Us</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by Nacha Natanael | &copy;2020</p>
+      </div>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Splide JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#image-slider", {
+          type: "loop",
+          perPage: 1,
+          autoPlay: true,
+          interval: 2000,
+        }).mount();
+      });
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      feather.replace();
+      document.querySelector('.hamburger-menu').addEventListener('click', function() {
+          document.querySelector('.dropdown-menu').classList.toggle('open');
+      });
+  </script>
+  </body>
+</html>
